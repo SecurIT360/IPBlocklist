@@ -1,0 +1,62 @@
+<stix:STIX_Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:stix="http://stix.mitre.org/stix-1" xmlns:indicator="http://stix.mitre.org/Indicator-2"
+    xmlns:cybox="http://cybox.mitre.org/cybox-2"
+    xmlns:AddressObject="http://cybox.mitre.org/objects#AddressObject-2"
+    xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
+    xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1"
+    xmlns:securit360="http://securit360.com"
+    xsi:schemaLocation="http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.0/stix_core.xsd
+                        http://stix.mitre.org/Indicator-2 http://stix.mitre.org/XMLSchema/indicator/2.0/indicator.xsd
+                        http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.0.0/cybox_default_vocabularies.xsd
+                        http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.0.0/stix_default_vocabularies.xsd
+                        http://cybox.mitre.org/objects#AddressObject-2 http://cybox.mitre.org/XMLSchema/objects/Address/2.0/Address_Object.xsd"
+    id="securit360:STIXPackage-cf48953e-5384-466a-aeb0-ce505473f1ad">
+    <stix:STIX_Header>
+        <stix:Title>SecurIT360 watchlist that contains IP information.</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators - Watchlist</stix:Package_Intent>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator xsi:type="indicator:IndicatorType"
+            id="securit360:Indicator-33fe3b22-0201-47cf-85d0-97c02164528d">
+            <indicator:Title>Emerging Threat Watchlist</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">IP Watchlist</indicator:Type>
+            <indicator:Description>IP Address Indicator for this watchlist.</indicator:Description>
+            <indicator:Observable id="securit360:Observable-1c798262-a4cd-434d-a958-884d6980c459">
+                <cybox:Object id="securit360:Object-1980ce43-8e03-490b-863a-ea404d12242e">
+                    <cybox:Properties xsi:type="AddressObject:AddressObjectType"
+                        category="ipv4-addr">
+                        <AddressObject:Address_Value condition="Equals" apply_condition="ANY">149.28.156.183,162.243.103.246</AddressObject:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator xsi:type="indicator:IndicatorType"
+            id="securit360:Indicator-fe847b52-e2c9-4c3a-88f3-3530e061e55e">
+            <indicator:Title>Firehol Watchlist</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">IP Watchlist</indicator:Type>
+            <indicator:Description>IP Address Indicator for this watchlist.</indicator:Description>
+            <indicator:Observable id="securit360:Observable-3db8140b-aa61-42af-afd8-63f14bede32a">
+                <cybox:Object id="securit360:Object-6e369c8f-9b6a-42dd-b428-49234be7e482">
+                    <cybox:Properties xsi:type="AddressObject:AddressObjectType"
+                        category="ipv4-addr">
+                        <AddressObject:Address_Value condition="Equals" apply_condition="ANY">1.32.128.0/18,2.56.192.0/22</AddressObject:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator xsi:type="indicator:IndicatorType"
+            id="securit360:Indicator-62be3f29-9b80-41d3-a170-9a0982250ff4">
+            <indicator:Title>Tor Exit Watchlist</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">IP Watchlist</indicator:Type>
+            <indicator:Description>IP Address Indicator for this watchlist.</indicator:Description>
+            <indicator:Observable id="securit360:Observable-c795d179-0f08-4183-8853-1bda50b13859">
+                <cybox:Object id="securit360:Object-a1facad2-221b-4234-bff7-4c73ae317771">
+                    <cybox:Properties xsi:type="AddressObject:AddressObjectType"
+                        category="ipv4-addr">
+                        <AddressObject:Address_Value condition="Equals" apply_condition="ANY">171.25.193.25,80.67.167.81</AddressObject:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+</stix:STIX_Package>
